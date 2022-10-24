@@ -1,0 +1,28 @@
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="/">главная</a></li>
+    <li class="breadcrumb-item active" aria-current="page">новый столбец</li>
+  </ol>
+</nav>
+
+{{#if alert}}
+  <div class="alert alert-success alert-dismissible fade show" role="alert">{{alert}}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  </div>
+{{/if}}
+
+<form
+  class="row g-3 needs-validation"
+  method="POST"
+  action="/addcol"
+  novalidate
+>
+  {{> col-form}} 
+  {{!-- {{> ticket-form}} --}}
+  <div class="col-6 d-grid">
+    <button type="submit" class="btn btn-primary">добавить столбец</button>
+  </div>
+  <div class="col-6 d-grid">
+  <a href="/addticket" type="bytton" class="btn btn-dark align-self-center">создать билет</a>
+  </div>
+</form>

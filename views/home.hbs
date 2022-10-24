@@ -1,0 +1,73 @@
+<div class="row">
+    <div class="col-6"><h1>Билеты</h1></div>
+  <div class="col-6 d-flex justify-content-end">
+
+<button type="button" class="btn btn-dark align-self-center" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  + добавить билет
+</button>
+
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="staticBackdropLabel">добавить билет</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Хотите добавить дополнительные типы билетов?
+              </div>
+              <div class="modal-footer">
+                <a href="/addcol" type="bytton" class="btn btn-primary">да</a>
+                    <a href="/addticket" type="bytton" class="btn btn-dark align-self-center">нет</a>
+              </div>
+            </div>
+          </div>
+    </div>
+  </div>
+</div>
+
+
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr style="font-size:xx-small">
+      <th scope="col">id</th>
+      <th scope="col">event_id</th>
+      <th scope="col">event_date</th>
+      <th scope="col">ticket_adult_price</th>
+      <th scope="col">ticket_adult_quantity</th>
+      <th scope="col">ticket_kid_price</th>
+      <th scope="col">ticket_kid_quantity</th>
+      <th scope="col">ticket_reduced_price</th>
+      <th scope="col">ticket_reduced_quantity</th>
+      <th scope="col">ticket_group_price</th>
+      <th scope="col">ticket_group_quantity</th>
+      <th scope="col">barcode</th>
+      <th scope="col">user_id</th>
+      <th scope="col">equal_price</th>
+      <th scope="col">created</th>
+    </tr>
+  </thead>
+  
+  <tbody>
+    {{#each rows}}
+      <tr style="text-align: center">
+        <th scope="row">{{this.id}}</th>
+        <td>{{this.event_id}}</td>
+        <td>{{this.event_date}}</td>
+        <td>{{this.ticket_adult_price}}</td>
+        <td>{{this.ticket_adult_quantity}}</td>
+        <td>{{this.ticket_kid_price}}</td>
+        <td>{{this.ticket_kid_quantity}}</td>
+        <td>{{this.ticket_reduced_price}}</td>
+        <td>{{this.ticket_reduced_quantity}}</td>
+        <td>{{this.ticket_group_price}}</td>
+        <td>{{this.ticket_group_quantity}}</td>
+        <td>{{this.barcode}}</td>
+        <td>{{this.user_id}}</td>
+        <td>{{this.equal_price}}</td>
+        <td>{{this.created}}</td>
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

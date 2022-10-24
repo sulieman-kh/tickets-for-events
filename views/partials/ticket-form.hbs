@@ -1,0 +1,201 @@
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="event_id"
+      name="event_id"
+      placeholder="event_id"
+      value="{{this.event_id}}"
+    />
+    <label for="event_id">event_id</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="date"
+      class="form-control"
+      id="event_date"
+      name="event_date"
+      placeholder="event_date"
+      value="{{this.event_date}}"
+    />
+    <label for="event_date">event_date</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="ticket_adult_price"
+      name="ticket_adult_price"
+      placeholder="ticket_adult_price"
+      value="{{this.ticket_adult_price}}"
+    />
+    <label for="ticket_adult_price">ticket_adult_price</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="ticket_adult_quantity"
+      name="ticket_adult_quantity"
+      placeholder="ticket_adult_quantity"
+      value="{{this.ticket_adult_quantity}}"
+    />
+    <label for="ticket_adult_quantity">ticket_adult_quantity</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="ticket_kid_price"
+      name="ticket_kid_price"
+      placeholder="Leave a comment here"
+      style="height"
+      value="{{this.ticket_kid_price}}"
+    />
+    <label for="ticket_kid_price">ticket_kid_price</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="ticket_kid_quantity"
+      name="ticket_kid_quantity"
+      placeholder="ticket_kid_quantity"
+      value="{{this.ticket_kid_quantity}}"
+    />
+    <label for="ticket_kid_quantity">ticket_kid_quantity</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="ticket_reduced_price"
+      name="ticket_reduced_price"
+      placeholder="ticket_reduced_price"
+      value="{{this.ticket_reduced_price}}"
+    />
+    <label for="ticket_reduced_price">ticket_reduced_price</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="ticket_reduced_quantity"
+      name="ticket_reduced_quantity"
+      placeholder="ticket_reduced_quantity"
+      value="{{this.ticket_reduced_quantity}}"
+    />
+    <label for="ticket_reduced_quantity">ticket_reduced_quantity</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="ticket_group_price"
+      name="ticket_group_price"
+      placeholder="ticket_group_price"
+      value="{{this.ticket_group_price}}"
+    />
+    <label for="ticket_group_price">ticket_group_price</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="ticket_group_quantity"
+      name="ticket_group_quantity"
+      placeholder="ticket_group_quantity"
+      value="{{this.ticket_group_quantity}}"
+    />
+    <label for="ticket_group_quantity">ticket_group_quantity</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="barcode"
+      name="barcode"
+      placeholder="barcode"
+      value="{{this.barcode}}"
+      onclick="Random()"
+    />
+    <label for="barcode">barcode</label>
+  </div>
+</div>
+<script>
+  function Random() { const barcode = Math.floor(Math.random() * 100000000);
+  document.getElementById('barcode').value = barcode }
+</script>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="user_id"
+      name="user_id"
+      placeholder="user_id"
+      value="{{this.user_id}}"
+    />
+    <label for="user_id">user_id</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="number"
+      class="form-control"
+      id="equal_price"
+      name="equal_price"
+      placeholder="equal_price"
+      value="{{this.equal_price}}"
+    />
+    <label for="equal_price">equal_price</label>
+  </div>
+</div>
+
+<div class="col-6">
+  <div class="form-floating mb-3">
+    <input
+      type="date"
+      class="form-control"
+      id="created"
+      name="created"
+      placeholder="created"
+      value="{{this.created}}"
+    />
+    <label for="created">created</label>
+  </div>
+</div>
